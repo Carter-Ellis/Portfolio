@@ -22,7 +22,18 @@ body {
 
 .logo {
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: 1rem;
+}
+
+.logo-icon {
+    width: auto;
+    height: 50px;
+    transition: opacity 0.2s ease;
+    display: block;
+}
+
+.logo-icon:hover {
+    opacity: 0.7;
 }
 
 .nav-links a {
@@ -30,7 +41,7 @@ body {
     color: #dfdfdf;
     text-decoration: none;
     margin-left: 25px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     transition: opacity 0.2s ease;
 }
 
@@ -41,11 +52,11 @@ body {
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 40px 0px;
+    margin-top: 80px;
 }
 
 .hero h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
 }
 
@@ -64,11 +75,30 @@ body {
 
 .hero-text {
     max-width: 850px;
-    margin: 200px auto 40px;
+    margin: 200px auto 0px;
     font-size: 2rem;
     line-height: 1.5;
-    color: #cbd5e1;
+    color: #dfdfdf;
     text-align: center;
+}
+
+.hero-text2 {
+    max-width: 850px;
+    margin: 100px auto 0px;
+    font-size: 2rem;
+    line-height: 2;
+    color: #dfdfdf;
+    text-align:center;
+}
+
+.hero-text2 a {
+    text-decoration: none;
+    color: #dfdfdf;
+    font-weight: 500;
+}
+
+.hero-text2 a:hover {
+    opacity: 0.7;
 }
 
 /* Button */
@@ -80,7 +110,7 @@ body {
     color: rgb(37, 46, 53);
     text-decoration: none;
     font-weight: 600;
-    border-radius: 16px;
+    border-radius: 8px;
     transition: all 0.2s ease;
     
 }
@@ -90,8 +120,8 @@ body {
 }
 
 .social-icon {
-    width: 24px;
-    height: 24px;
+    width: 40px;
+    height: 40px;
     vertical-align: middle;
     transition: opacity 0.2s ease;
     filter: invert(1);
@@ -99,4 +129,88 @@ body {
 
 .social-icon:hover {
     opacity: 0.7;
+}
+
+.download-btn {
+    margin-top: 200px;
+    display: inline-block;
+    background-color: #dfdfdf;
+    color: rgb(37, 46, 53);
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    transition: all 0.2s ease;
+}
+
+.download-btn:hover {
+    opacity: 0.7;
+    transform: translateY(-2px);
+}
+  
+.transparent-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border: 2px solid #dfdfdf;
+    border-radius: 8px;
+    background: transparent;
+    color: #dfdfdf;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    transition: all 0.2s ease;
+}
+
+.button-group {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.transparent-btn:hover {
+    background-color: #dfdfdf;
+    color: rgb(37, 46, 53);
+    transform: translateY(-2px);
+    text-align: center;
+}
+
+.transparent-btn-vertical {
+    display: inline-block;
+    padding: 12px 28px;
+    border: 2px solid #dfdfdf;
+    border-radius: 8px;
+    background: transparent;
+    color: #dfdfdf;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    transition: all 0.2s ease;
+    width: 360px;
+    text-align: center;
+}
+
+.transparent-btn-vertical:hover {
+    background-color: #dfdfdf;
+    color: rgb(37, 46, 53);
+    transform: translateY(-2px);
+}
+
+.contact-intro {
+    color: #dfdfdf;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.email-btn {
+  background: rgb(53, 69, 82);
+  color: #dfdfdf;
+  border: 2px solid #dfdfdf;
+}
+.email-btn:hover {
+  background: rgb(97, 114, 128);
 }

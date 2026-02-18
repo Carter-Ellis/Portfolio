@@ -1,12 +1,30 @@
+
 {% extends 'core/base.html' %}
+{% load static %}
 {% block title %}Carter Ellis | Portfolio{% endblock %}
 
 {% block content %}
     <section class="hero">
         <h1>Contact Me!</h1>
+        <p class="contact-intro">
+            I'm always open to discussing new opportunities or collaborations.
+        </p>
     </section>
-    
-    <section class="hero-text">
-        <p> carterellis13@gmail.com </p>
+
+        <div class="button-group">
+            <a href="mailto:carterellis13@gmail.com" class="transparent-btn-vertical email-btn">
+                carterellis13@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/carter-ellis-/" target="_blank" rel="noopener noreferrer" class="transparent-btn-vertical">
+                LinkedIn
+            </a>
+            <a href="{% static 'core/Resume.pdf' %}" target="_blank" rel="noopener noreferrer" class="transparent-btn-vertical">
+                Resume
+            </a>
+            <a href="https://github.com/Carter-Ellis" target="_blank" rel="noopener noreferrer" class="transparent-btn-vertical">
+                Github
+            </a>
+        </div>
+
     </section>
 {% endblock %}
