@@ -1,33 +1,15 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Carter Ellis | Portfolio</title>
-    <link rel="stylesheet" href="{% static 'core/style.css' %}">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
+{% extends 'core/base.html' %}
+{% block title %}Carter Ellis | Portfolio{% endblock %}
 
-    <nav class="navbar">
-        <div class="logo">Carter Ellis</div>
-        <div class="nav-links">
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
-            <a href="https://www.linkedin.com/in/carter-ellis-/" target="_blank" rel="noopener noreferrer">
-                <img src="{% static 'core/linkedin.png' %}" alt="LinkedIn" class="social-icon">
-            </a>
-            <a href="https://github.com/Carter-Ellis" target="_blank" rel="noopener noreferrer">
-                <img src="{% static 'core/github.png' %}" alt="Github" class="social-icon">
-            </a>
-        </div>
-    </nav>
+{% block content %}
+    <section class="hero-text">
+        <p>
+            Hello, I'm Carter, a senior at Purdue University studying Computer Science. 
+            I'm passionate about building interactive software and real-world applications, 
+            with a strong interest in full-stack development and game design. 
+        </p>
 
-    <section class="hero">
-        <p>Computer Science student building modern, scalable applications.</p>
         <a href="#" class="btn">View My Work</a>
     </section>
+{% endblock %}
 
-</body>
-</html>
