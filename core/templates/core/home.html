@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carter Ellis | Portfolio</title>
+    <link rel="stylesheet" href="{% static 'core/style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Carter Ellis</div>
+        <div class="nav-links">
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+            <a href="https://www.linkedin.com/in/carter-ellis-/" target="_blank" rel="noopener noreferrer">
+                <img src="{% static 'core/linkedin.png' %}" alt="LinkedIn" class="social-icon">
+            </a>
+            <a href="https://github.com/Carter-Ellis" target="_blank" rel="noopener noreferrer">
+                <img src="{% static 'core/github.png' %}" alt="Github" class="social-icon">
+            </a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <p>Computer Science student building modern, scalable applications.</p>
+        <a href="#" class="btn">View My Work</a>
+    </section>
+
+</body>
+</html>
