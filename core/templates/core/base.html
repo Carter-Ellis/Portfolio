@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Carter Ellis | Portfolio</title>
+    <title>{% block title %} Carter Ellis | Portfolio {% endblock %}</title>
     <link rel="stylesheet" href="{% static 'core/style.css' %}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -11,19 +11,19 @@
 
     <nav class="navbar">
         <div class="logo">
-            <a href="{% url 'home' %}" rel="noopener noreferrer">
+            <a href="{% url 'home' %}" rel="noopener noreferrer" title="Home">
                 <img src="{% static 'core/CE Logo.png' %}" alt="Carter Ellis" class="logo-icon">
             </a>
         </div>
         <div class="nav-links">
-            <a href="{% url 'home' %}">Home</a>
-            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'home' %}" >Home</a>
+            <a href="{% url 'about' %}" >About</a>
             <a href="#">Projects</a>
             <a href="{% url 'contact' %}">Contact</a>
-            <a href="https://www.linkedin.com/in/carter-ellis-/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/carter-ellis-/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
                 <img src="{% static 'core/linkedin.png' %}" alt="LinkedIn" class="social-icon">
             </a>
-            <a href="https://github.com/Carter-Ellis" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Carter-Ellis" target="_blank" rel="noopener noreferrer" title="Github">
                 <img src="{% static 'core/github.png' %}" alt="Github" class="social-icon">
             </a>
         </div>
