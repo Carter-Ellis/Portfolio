@@ -218,3 +218,24 @@ body {
 .email-btn:hover {
   background: rgb(97, 114, 128);
 }
+
+.about-image {
+    max-width: 100%px;
+    width: 100%;
+    display: block;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.about-cta {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 100px;
+}
+
+.image-caption {
+    text-align: center;
+    font-size: 1.2rem;
+    opacity: .7;
+}
